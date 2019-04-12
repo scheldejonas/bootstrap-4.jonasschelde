@@ -5,7 +5,7 @@
   --------------------------*/
 
 
-//Overriding variables before importing from boostrap
+// Overriding variables before importing from boostrap
 $main: #FF7200;
 
 $primay: $main;
@@ -51,8 +51,15 @@ $primay: $main;
 //@import "~bootstrap/scss/print";
 
 
-// Setting - special styles
-.featured-list-group-item {
+// Customizing - with some base css
+@mixin kronborg-background {
+  background-image: url('/img/kronborg.jpg');
+  background-size: cover;
+}
+
+
+// Customizing - with sass functions
+@mixin featured {
   color: color("white");
   background-color: theme-color-level("dark", -7);
 }
@@ -62,7 +69,12 @@ $primay: $main;
   font-size: 1rem;
 }
 
+
+// Customizing - with sass mixins
 .jumbotron {
-  background-image: url('/img/kronborg.jpg');
-  background-size: cover;
+  @include kronborg-background;
+}
+
+.featured-list-group-item {
+  @include featured
 }
