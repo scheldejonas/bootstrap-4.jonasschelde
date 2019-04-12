@@ -1,0 +1,47 @@
+/*--------------------------
+
+ Full-Stack conference custom css
+
+  --------------------------*/
+
+
+// Making my own color grade function
+
+
+//Overriding variables before importing from boostrap
+$main: #FF7200;
+
+$primay: $main;
+
+
+// If everything from bootstrap is needed
+ @import "~bootstrap/scss/bootstrap";
+
+// Required
+//@import "~bootstrap/scss/functions";
+//@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/mixins";
+
+// Optional
+//@import "~bootstrap/scss/reboot";
+//@import "~bootstrap/scss/type";
+//@import "~bootstrap/scss/images";
+//@import "~bootstrap/scss/code";
+//@import "~bootstrap/scss/grid";
+
+
+// Setting - special styles on
+.featured-list-group-item {
+  color: color("white");
+  background-color: theme-color-level("dark", -7);
+}
+
+.navbar .navbar-brand {
+  color: color('lightwhite');
+  font-size: 1rem;
+}
+
+.jumbotron {
+  background-image: url('/img/kronborg.jpg');
+  background-size: cover;
+}
