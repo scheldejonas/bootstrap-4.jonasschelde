@@ -20,8 +20,16 @@
   "homepage": "https://github.com/scheldejonas/bootstrap-4.jonasschelde#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "child_process": "^1.0.2",
+    "criticalcss": "^2.1.0",
+    "fs": "0.0.1-security",
     "jquery": "^3.4.0",
-    "popper.js": "^1.15.0"
+    "net": "^1.0.2",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "popper.js": "^1.15.0",
+    "request": "^2.88.0",
+    "tls": "0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
